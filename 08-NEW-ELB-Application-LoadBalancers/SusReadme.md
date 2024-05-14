@@ -3,12 +3,12 @@ A Kubernetes application load balancer is a type of service, while Kubernetes in
 ingresses are native objects inside the cluster that can route to multiple services, while load balancers are external to the cluster and only route to a single service.
 Mine:-- In general, ALB is external to k8s-cluster and Ingress is internal to the k8s-cluster. ALB sits infront of ingress. ALB route traffic to ingress and ingress, which is having multiple rules route traffic to multiple services.
 An Ingress(resource) defines rules that determine how traffic from the external network should be forwarded to the services in your cluster. 
-https://www.geeksforgeeks.org/difference-between-kubernetes-ingress-and-loadbalancer/
+[https://www.geeksforgeeks.org/difference-between-kubernetes-ingress-and-loadbalancer/]
 
 ## References: 
 - Good to refer all the below for additional understanding.
 
 ### External DNS
-- https://github.com/kubernetes-sigs/external-dns
+- [https://github.com/kubernetes-sigs/external-dns]
 - https://github.com/kubernetes-sigs/external-dns/blob/master/docs/tutorials/alb-ingress.md
 This site was built using [GitHub Pages](https://pages.github.com/).
