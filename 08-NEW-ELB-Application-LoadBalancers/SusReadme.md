@@ -7,6 +7,7 @@
 - A Kubernetes application load balancer is a type of service, while Kubernetes ingress is a collection of rules, not a service. Instead, Kubernetes ingress sits in front of multiple services and acts as the entry point for an entire cluster of pods. 
 - An Ingress(resource) defines rules that determine how traffic from the external network should be forwarded to the services in your cluster. 
 ### When To Use Kubernetes Loadbalancer
+- A Kubernetes load balancer is the default way to expose a service to the internet.
 - Every service you expose using a load balancer will receive its own IP address. This is the main drawback with loadbalancer service. You have to pay for a load balancer for each exposed service, which may grow pricey!
 - if you wish to expose a service directly, on the port you designate and the service will receive all kind of incoming traffic,  including HTTP, TCP, UDP, Websockets, gRPC, and so on.. i,e without any need of Filtering, routing, and any other kind of features then you can go for Loadbalancer.
 - Load balancers can only route to one service at a time since they are defined per service. This contrasts with an ingress, which can route to several services inside the cluster.
